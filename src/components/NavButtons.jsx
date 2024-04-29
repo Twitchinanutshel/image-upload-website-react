@@ -16,7 +16,7 @@ const NavButtons = () => {
       <div className='absolute top-0 right-0 mr-4 bg-transparent'>
         <div className='flex space-x-2 text-white text-xl font-josefin'>
           <NavLink
-            to='/'
+            to='/image-upload-website-react'
             className={linkClass}
           >
             Home
