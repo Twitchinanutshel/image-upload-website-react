@@ -37,8 +37,8 @@ function App() {
         <Route path='/add-image' element={<AddImagePage addImageSubmit={addImage}/>} />
         <Route path='/image/:id' element={<ImagePage deleteImage={deleteImage}/>} loader={imageLoader}/>
       </Route>
-    )
-  )
+    ), { basename: "/image-upload-website-react" }
+  );
 
   return <RouterProvider router={router} />;
 }
