@@ -31,8 +31,8 @@ function App() {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/' element={<NavButtons/>}>
-        <Route index path='/' element={<Home />} />
+      <Route element={<NavButtons/>}>
+        <Route index element={<Home />} />
         <Route path='/images-page' element={<ImagesPage />} />
         <Route path='/add-image' element={<AddImagePage addImageSubmit={addImage}/>} />
         <Route path='/image/:id' element={<ImagePage deleteImage={deleteImage}/>} loader={imageLoader}/>
