@@ -4,7 +4,7 @@ import AddImagePage from './pages/AddImagePage'
 import ImagesPage from './pages/ImagesPage'
 import ImagePage, { imageLoader } from './pages/ImagePage'
 import NavButtons from './components/NavButtons'
-import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
+import { Route, BrowserRouter, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 
 function App() {
   document.body.style.backgroundColor = '#1F2937'
@@ -37,7 +37,7 @@ function App() {
         <Route path='/add-image' element={<AddImagePage addImageSubmit={addImage}/>} />
         <Route path='/image/:id' element={<ImagePage deleteImage={deleteImage}/>} loader={imageLoader}/>
       </Route>
-    ), { basename: "/image-upload-website-react/" }
+    ), { basename: "/image-upload-website-react" }
   );
 
   return <RouterProvider router={router} />;
