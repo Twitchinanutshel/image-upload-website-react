@@ -3,6 +3,7 @@ import NavButtons from '../components/NavButtons';
 import Hero from '../components/Hero';
 import ImageListings from '../components/ImageListings';
 import beepLandscape from '../assets/beep-landscape.webp'
+import Rating from '../components/Rating';
 
 
 const Home = () => {
@@ -13,6 +14,9 @@ const Home = () => {
       </div>
       <div className='flex justify-center items-center mt-12'>
         <ImageListings isHome={true}/>
+      </div>
+      <div>
+        <Rating />
       </div>
     </div>
   );
